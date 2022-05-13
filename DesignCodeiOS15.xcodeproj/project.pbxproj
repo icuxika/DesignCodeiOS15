@@ -15,6 +15,7 @@
 		0788ED26282D64E600FC5453 /* DesignCodeiOS15UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED25282D64E600FC5453 /* DesignCodeiOS15UITests.swift */; };
 		0788ED28282D64E600FC5453 /* DesignCodeiOS15UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED27282D64E600FC5453 /* DesignCodeiOS15UITestsLaunchTests.swift */; };
 		0788ED35282E942A00FC5453 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED34282E942A00FC5453 /* Styles.swift */; };
+		0788ED37282EA47700FC5453 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED36282EA47700FC5453 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		0788ED25282D64E600FC5453 /* DesignCodeiOS15UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15UITests.swift; sourceTree = "<group>"; };
 		0788ED27282D64E600FC5453 /* DesignCodeiOS15UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0788ED34282E942A00FC5453 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		0788ED36282EA47700FC5453 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				0788ED0A282D64E400FC5453 /* DesignCodeiOS15App.swift */,
 				0788ED0C282D64E400FC5453 /* ContentView.swift */,
+				0788ED36282EA47700FC5453 /* AccountView.swift */,
 				0788ED34282E942A00FC5453 /* Styles.swift */,
 				0788ED0E282D64E600FC5453 /* Assets.xcassets */,
 				0788ED10282D64E600FC5453 /* Preview Content */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0788ED37282EA47700FC5453 /* AccountView.swift in Sources */,
 				0788ED35282E942A00FC5453 /* Styles.swift in Sources */,
 				0788ED0D282D64E400FC5453 /* ContentView.swift in Sources */,
 				0788ED0B282D64E400FC5453 /* DesignCodeiOS15App.swift in Sources */,
