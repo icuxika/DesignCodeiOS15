@@ -20,6 +20,7 @@
 		0788ED3B282F56B000FC5453 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED3A282F56B000FC5453 /* BlobView.swift */; };
 		0788ED3D282F7E1500FC5453 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED3C282F7E1500FC5453 /* TabBar.swift */; };
 		0788ED3F282F989600FC5453 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED3E282F989600FC5453 /* Tab.swift */; };
+		0788ED41282FC9DF00FC5453 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED40282FC9DF00FC5453 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		0788ED3A282F56B000FC5453 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		0788ED3C282F7E1500FC5453 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0788ED3E282F989600FC5453 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		0788ED40282FC9DF00FC5453 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				0788ED0A282D64E400FC5453 /* DesignCodeiOS15App.swift */,
-				0788ED0C282D64E400FC5453 /* ContentView.swift */,
-				0788ED3C282F7E1500FC5453 /* TabBar.swift */,
-				0788ED3E282F989600FC5453 /* Tab.swift */,
-				0788ED36282EA47700FC5453 /* AccountView.swift */,
-				0788ED38282F50BD00FC5453 /* HexagonView.swift */,
-				0788ED3A282F56B000FC5453 /* BlobView.swift */,
-				0788ED34282E942A00FC5453 /* Styles.swift */,
+				0788ED42282FCB7500FC5453 /* Navigation */,
+				0788ED43282FCB8F00FC5453 /* Views */,
+				0788ED44282FCB9C00FC5453 /* Components */,
+				0788ED45282FCBAB00FC5453 /* Model */,
+				0788ED46282FCBC900FC5453 /* Styles */,
 				0788ED0E282D64E600FC5453 /* Assets.xcassets */,
 				0788ED10282D64E600FC5453 /* Preview Content */,
 			);
@@ -143,6 +143,49 @@
 				0788ED27282D64E600FC5453 /* DesignCodeiOS15UITestsLaunchTests.swift */,
 			);
 			path = DesignCodeiOS15UITests;
+			sourceTree = "<group>";
+		};
+		0788ED42282FCB7500FC5453 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0788ED0C282D64E400FC5453 /* ContentView.swift */,
+				0788ED3C282F7E1500FC5453 /* TabBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0788ED43282FCB8F00FC5453 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0788ED40282FC9DF00FC5453 /* HomeView.swift */,
+				0788ED36282EA47700FC5453 /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0788ED44282FCB9C00FC5453 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0788ED38282F50BD00FC5453 /* HexagonView.swift */,
+				0788ED3A282F56B000FC5453 /* BlobView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0788ED45282FCBAB00FC5453 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0788ED3E282F989600FC5453 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0788ED46282FCBC900FC5453 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				0788ED34282E942A00FC5453 /* Styles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0788ED41282FC9DF00FC5453 /* HomeView.swift in Sources */,
 				0788ED37282EA47700FC5453 /* AccountView.swift in Sources */,
 				0788ED35282E942A00FC5453 /* Styles.swift in Sources */,
 				0788ED0D282D64E400FC5453 /* ContentView.swift in Sources */,
