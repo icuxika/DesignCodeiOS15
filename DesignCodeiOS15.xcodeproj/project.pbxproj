@@ -16,6 +16,8 @@
 		0788ED28282D64E600FC5453 /* DesignCodeiOS15UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED27282D64E600FC5453 /* DesignCodeiOS15UITestsLaunchTests.swift */; };
 		0788ED35282E942A00FC5453 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED34282E942A00FC5453 /* Styles.swift */; };
 		0788ED37282EA47700FC5453 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED36282EA47700FC5453 /* AccountView.swift */; };
+		0788ED39282F50BD00FC5453 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED38282F50BD00FC5453 /* HexagonView.swift */; };
+		0788ED3B282F56B000FC5453 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED3A282F56B000FC5453 /* BlobView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0788ED27282D64E600FC5453 /* DesignCodeiOS15UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0788ED34282E942A00FC5453 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		0788ED36282EA47700FC5453 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		0788ED38282F50BD00FC5453 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		0788ED3A282F56B000FC5453 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				0788ED0A282D64E400FC5453 /* DesignCodeiOS15App.swift */,
 				0788ED0C282D64E400FC5453 /* ContentView.swift */,
 				0788ED36282EA47700FC5453 /* AccountView.swift */,
+				0788ED38282F50BD00FC5453 /* HexagonView.swift */,
+				0788ED3A282F56B000FC5453 /* BlobView.swift */,
 				0788ED34282E942A00FC5453 /* Styles.swift */,
 				0788ED0E282D64E600FC5453 /* Assets.xcassets */,
 				0788ED10282D64E600FC5453 /* Preview Content */,
@@ -266,7 +272,9 @@
 				0788ED37282EA47700FC5453 /* AccountView.swift in Sources */,
 				0788ED35282E942A00FC5453 /* Styles.swift in Sources */,
 				0788ED0D282D64E400FC5453 /* ContentView.swift in Sources */,
+				0788ED3B282F56B000FC5453 /* BlobView.swift in Sources */,
 				0788ED0B282D64E400FC5453 /* DesignCodeiOS15App.swift in Sources */,
+				0788ED39282F50BD00FC5453 /* HexagonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
