@@ -21,6 +21,9 @@
 		0788ED3D282F7E1500FC5453 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED3C282F7E1500FC5453 /* TabBar.swift */; };
 		0788ED3F282F989600FC5453 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED3E282F989600FC5453 /* Tab.swift */; };
 		0788ED41282FC9DF00FC5453 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED40282FC9DF00FC5453 /* HomeView.swift */; };
+		07F61B9B2833D13B00DCC447 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61B9A2833D13B00DCC447 /* FeaturedItem.swift */; };
+		07F61B9D2833D2BA00DCC447 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61B9C2833D2BA00DCC447 /* NavigationBar.swift */; };
+		07F61B9F2833D76500DCC447 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61B9E2833D76500DCC447 /* PreferenceKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		0788ED3C282F7E1500FC5453 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0788ED3E282F989600FC5453 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		0788ED40282FC9DF00FC5453 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		07F61B9A2833D13B00DCC447 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
+		07F61B9C2833D2BA00DCC447 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		07F61B9E2833D76500DCC447 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 			children = (
 				0788ED0C282D64E400FC5453 /* ContentView.swift */,
 				0788ED3C282F7E1500FC5453 /* TabBar.swift */,
+				07F61B9C2833D2BA00DCC447 /* NavigationBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 			children = (
 				0788ED38282F50BD00FC5453 /* HexagonView.swift */,
 				0788ED3A282F56B000FC5453 /* BlobView.swift */,
+				07F61B9A2833D13B00DCC447 /* FeaturedItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0788ED3E282F989600FC5453 /* Tab.swift */,
+				07F61B9E2833D76500DCC447 /* PreferenceKeys.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,9 +332,12 @@
 				0788ED35282E942A00FC5453 /* Styles.swift in Sources */,
 				0788ED0D282D64E400FC5453 /* ContentView.swift in Sources */,
 				0788ED3F282F989600FC5453 /* Tab.swift in Sources */,
+				07F61B9D2833D2BA00DCC447 /* NavigationBar.swift in Sources */,
 				0788ED3B282F56B000FC5453 /* BlobView.swift in Sources */,
 				0788ED0B282D64E400FC5453 /* DesignCodeiOS15App.swift in Sources */,
 				0788ED39282F50BD00FC5453 /* HexagonView.swift in Sources */,
+				07F61B9B2833D13B00DCC447 /* FeaturedItem.swift in Sources */,
+				07F61B9F2833D76500DCC447 /* PreferenceKeys.swift in Sources */,
 				0788ED3D282F7E1500FC5453 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
