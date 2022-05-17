@@ -25,6 +25,7 @@
 		07F61B9D2833D2BA00DCC447 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61B9C2833D2BA00DCC447 /* NavigationBar.swift */; };
 		07F61B9F2833D76500DCC447 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61B9E2833D76500DCC447 /* PreferenceKeys.swift */; };
 		07F61BA12833DC0B00DCC447 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61BA02833DC0B00DCC447 /* AnimatableFontModifier.swift */; };
+		07F61BA32833EEAF00DCC447 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61BA22833EEAF00DCC447 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		07F61B9C2833D2BA00DCC447 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		07F61B9E2833D76500DCC447 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		07F61BA02833DC0B00DCC447 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
+		07F61BA22833EEAF00DCC447 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				0788ED3E282F989600FC5453 /* Tab.swift */,
 				07F61B9E2833D76500DCC447 /* PreferenceKeys.swift */,
+				07F61BA22833EEAF00DCC447 /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				07F61B9D2833D2BA00DCC447 /* NavigationBar.swift in Sources */,
 				0788ED3B282F56B000FC5453 /* BlobView.swift in Sources */,
 				0788ED0B282D64E400FC5453 /* DesignCodeiOS15App.swift in Sources */,
+				07F61BA32833EEAF00DCC447 /* Course.swift in Sources */,
 				0788ED39282F50BD00FC5453 /* HexagonView.swift in Sources */,
 				07F61B9B2833D13B00DCC447 /* FeaturedItem.swift in Sources */,
 				07F61B9F2833D76500DCC447 /* PreferenceKeys.swift in Sources */,
