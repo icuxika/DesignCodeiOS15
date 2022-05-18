@@ -10,6 +10,10 @@ import SwiftUI
 struct HomeView: View {
     
     @State var hasScrolled = false
+    @Namespace var namespace
+    @State var show = false
+    @State var showStatusBar = true
+    @State var selectedID = UUID()
     
     var body: some View {
         ZStack {
@@ -20,7 +24,25 @@ struct HomeView: View {
                 
                 featured
                 
-                Color.clear.frame(height: 1000)
+                Text("Courses".uppercased())
+                    .font(.footnote.weight(.semibold))
+                    .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(24)
+                
+                if !show {
+                    cards
+                } else {
+                    ForEach(courses) { course in
+                        Rectangle()
+                            .fill(.white)
+                            .frame(height: 300)
+                            .cornerRadius(32)
+                            .shadow(color: Color("Shadow"), radius: 24, x: 0, y: 10)
+                            .opacity(0.3)
+                            .padding(.horizontal, 32)
+                    }
+                }
             }
             .coordinateSpace(name: "scroll")
             .safeAreaInset(edge: .top) {
@@ -29,6 +51,20 @@ struct HomeView: View {
             .overlay(
                 NavigationBar(titile: "Featured", hasScrolled: $hasScrolled)
             )
+            
+            if show {
+                detail
+            }
+        }
+        .statusBar(hidden: !showStatusBar)
+        .onChange(of: show) { newValue in
+            withAnimation(.closeCard) {
+                if newValue {
+                    showStatusBar = false
+                } else {
+                    showStatusBar = true
+                }
+            }
         }
     }
     
@@ -74,9 +110,39 @@ struct HomeView: View {
         .frame(height: 440)
         .background(Image("Blob 1").offset(x: 240, y: -100))
     }
+    
+    var cards: some View {
+        ForEach(courses) { course in
+            CourseItem(namespace: namespace, course: course, show: $show)
+                .onTapGesture {
+                    withAnimation(.openCard) {
+                        show.toggle()
+                        selectedID = course.id
+                    }
+                }
+        }
+    }
+    
+    var detail: some View {
+        ForEach(courses) { course in
+            if course.id == selectedID {
+                CourseView(namespace: namespace, course: course, show: $show)
+                    .zIndex(1)
+                    .transition(
+                        .asymmetric(
+                            insertion: .opacity.animation(.easeInOut(duration: 0.1)),
+                            removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))
+                        )
+                    )
+            }
+        }
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
+    
+    @Namespace static var namespace
+    
     static var previews: some View {
         HomeView()
             .preferredColorScheme(.light)
