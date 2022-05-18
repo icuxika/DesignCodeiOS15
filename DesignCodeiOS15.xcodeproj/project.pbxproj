@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072682C32833F92300DAB1EB /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072682C22833F92300DAB1EB /* MatchedView.swift */; };
 		0788ED0B282D64E400FC5453 /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED0A282D64E400FC5453 /* DesignCodeiOS15App.swift */; };
 		0788ED0D282D64E400FC5453 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788ED0C282D64E400FC5453 /* ContentView.swift */; };
 		0788ED0F282D64E600FC5453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0788ED0E282D64E600FC5453 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		072682C22833F92300DAB1EB /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 		0788ED07282D64E400FC5453 /* DesignCodeiOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeiOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0788ED0A282D64E400FC5453 /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		0788ED0C282D64E400FC5453 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				0788ED40282FC9DF00FC5453 /* HomeView.swift */,
 				0788ED36282EA47700FC5453 /* AccountView.swift */,
+				072682C22833F92300DAB1EB /* MatchedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				0788ED37282EA47700FC5453 /* AccountView.swift in Sources */,
 				0788ED35282E942A00FC5453 /* Styles.swift in Sources */,
 				0788ED0D282D64E400FC5453 /* ContentView.swift in Sources */,
+				072682C32833F92300DAB1EB /* MatchedView.swift in Sources */,
 				0788ED3F282F989600FC5453 /* Tab.swift in Sources */,
 				07F61B9D2833D2BA00DCC447 /* NavigationBar.swift in Sources */,
 				0788ED3B282F56B000FC5453 /* BlobView.swift in Sources */,
