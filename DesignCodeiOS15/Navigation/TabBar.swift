@@ -19,7 +19,6 @@ struct TabBar: View {
             let hasHomeIndicator = proxy.safeAreaInsets.bottom > 50
             
             HStack {
-                Text("\(proxy.safeAreaInsets.bottom)")
                 buttons
             }
             .padding(.horizontal, 8)
