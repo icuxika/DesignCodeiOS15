@@ -14,22 +14,28 @@ struct TabBar: View {
     @State var tabItemWidth: CGFloat = 0
     
     var body: some View {
-        HStack {
-            buttons
+        GeometryReader { proxy in
+            // iPhone SE 上检测到值视频教程是0，但本机模拟器却是48，原因还不清楚
+            let hasHomeIndicator = proxy.safeAreaInsets.bottom > 50
+            
+            HStack {
+                Text("\(proxy.safeAreaInsets.bottom)")
+                buttons
+            }
+            .padding(.horizontal, 8)
+            .padding(.top, 12)
+            .frame(height: hasHomeIndicator ? 80 : 64, alignment: .top)
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: hasHomeIndicator ? 32 : 0, style: .continuous))
+            .background(
+                background
+            )
+            .overlay(
+                overlay
+            )
+            .strokeStyle(cornerRadius: hasHomeIndicator ? 32 : 0)
+            .frame(maxHeight: .infinity, alignment: .bottom)
+            .ignoresSafeArea()
         }
-        .padding(.horizontal, 8)
-        .padding(.top, 12)
-        .frame(height: 80, alignment: .top)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 32, style: .continuous))
-        .background(
-            background
-        )
-        .overlay(
-            overlay
-        )
-        .strokeStyle()
-        .frame(maxHeight: .infinity, alignment: .bottom)
-        .ignoresSafeArea()
     }
     
     var buttons: some View {

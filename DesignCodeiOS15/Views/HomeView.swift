@@ -31,19 +31,22 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(24)
                 
-                if !show {
-                    cards
-                } else {
-                    ForEach(courses) { course in
-                        Rectangle()
-                            .fill(.white)
-                            .frame(height: 300)
-                            .cornerRadius(32)
-                            .shadow(color: Color("Shadow"), radius: 24, x: 0, y: 10)
-                            .opacity(0.3)
-                            .padding(.horizontal, 32)
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 300), spacing: 20)], spacing: 20) {
+                    if !show {
+                        cards
+                    } else {
+                        ForEach(courses) { course in
+                            Rectangle()
+                                .fill(.white)
+                                .frame(height: 300)
+                                .cornerRadius(32)
+                                .shadow(color: Color("Shadow"), radius: 24, x: 0, y: 10)
+                                .opacity(0.3)
+                                .padding(.horizontal, 32)
+                        }
                     }
                 }
+                .padding(.horizontal, 20)
             }
             .coordinateSpace(name: "scroll")
             .safeAreaInset(edge: .top) {
@@ -92,6 +95,8 @@ struct HomeView: View {
                     let minX = proxy.frame(in: .global).minX
                     
                     FeaturedItem(course: item)
+                        .frame(maxWidth: 500)
+                        .frame(maxWidth: .infinity)
                         .padding(.vertical, 40)
                         .rotation3DEffect(.degrees(minX / -10), axis: (x: 0, y: 1, z: 0))
                         .shadow(color: Color("Shadow").opacity(0.3), radius: 8, x: 0, y: 8)
