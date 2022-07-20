@@ -30,6 +30,7 @@
 		07CE403D28352D7700720F37 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE403C28352D7700720F37 /* Animations.swift */; };
 		07CE403F28367AC600720F37 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE403E28367AC600720F37 /* Model.swift */; };
 		07EF0B3D2850CA08001698CB /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF0B3C2850CA08001698CB /* AngularButtonStyle.swift */; };
+		07EF0B3F28883BCC001698CB /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF0B3E28883BCC001698CB /* InputStyle.swift */; };
 		07F61B9B2833D13B00DCC447 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61B9A2833D13B00DCC447 /* FeaturedItem.swift */; };
 		07F61B9D2833D2BA00DCC447 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61B9C2833D2BA00DCC447 /* NavigationBar.swift */; };
 		07F61B9F2833D76500DCC447 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61B9E2833D76500DCC447 /* PreferenceKeys.swift */; };
@@ -81,6 +82,7 @@
 		07CE403C28352D7700720F37 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		07CE403E28367AC600720F37 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		07EF0B3C2850CA08001698CB /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
+		07EF0B3E28883BCC001698CB /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
 		07F61B9A2833D13B00DCC447 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		07F61B9C2833D2BA00DCC447 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		07F61B9E2833D76500DCC447 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				07F61BA02833DC0B00DCC447 /* AnimatableFontModifier.swift */,
 				07CE403C28352D7700720F37 /* Animations.swift */,
 				07EF0B3C2850CA08001698CB /* AngularButtonStyle.swift */,
+				07EF0B3E28883BCC001698CB /* InputStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				07A9FB4C284CD28C000DF57D /* SignUpView.swift in Sources */,
 				07CE403D28352D7700720F37 /* Animations.swift in Sources */,
 				07F61B9F2833D76500DCC447 /* PreferenceKeys.swift in Sources */,
+				07EF0B3F28883BCC001698CB /* InputStyle.swift in Sources */,
 				07CE403F28367AC600720F37 /* Model.swift in Sources */,
 				0788ED3D282F7E1500FC5453 /* TabBar.swift in Sources */,
 				07F61BA12833DC0B00DCC447 /* AnimatableFontModifier.swift in Sources */,
