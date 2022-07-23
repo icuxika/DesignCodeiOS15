@@ -50,13 +50,7 @@ struct NavigationBar: View {
                         showModal = true
                     }
                 } label: {
-                    Image("Avatar Default")
-                        .resizable()
-                        .frame(width: 24, height: 24)
-                        .cornerRadius(16)
-                        .padding(8)
-                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-                        .strokeStyle(cornerRadius: 16)
+                    AvatarView()
                 }
                 .sheet(isPresented: $showAccount) {
                     AccountView()
