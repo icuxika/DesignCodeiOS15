@@ -16,7 +16,7 @@ struct TabBar: View {
     var body: some View {
         GeometryReader { proxy in
             // iPhone SE 上检测到值视频教程是0，但本机模拟器却是48，原因还不清楚
-            let hasHomeIndicator = proxy.safeAreaInsets.bottom > 50
+            let hasHomeIndicator = proxy.safeAreaInsets.bottom - 88 > 20
             
             HStack {
                 buttons
