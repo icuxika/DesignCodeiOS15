@@ -34,9 +34,10 @@ struct ContentView: View {
                     .zIndex(1)
             }
         }
-        .safeAreaInset(edge: .bottom) {
+        .safeAreaInset(edge: .bottom, spacing: 0) {
             Color.clear.frame(height: 40)
         }
+        .dynamicTypeSize(.large ... .xxLarge)
     }
 }
 
