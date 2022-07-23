@@ -10,7 +10,7 @@ import SwiftUI
 struct ExploreView: View {
     var body: some View {
         ZStack {
-            Color("Backgound").ignoresSafeArea()
+            Color("Background").ignoresSafeArea()
             
             courseSection
                 .safeAreaInset(edge: .top) {
